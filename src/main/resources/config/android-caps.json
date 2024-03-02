@@ -1,0 +1,7 @@
+{
+    "platformName": "android",
+    "automationName": "uiautomator2",
+    "platformVersion": "13",
+    "deviceName": "Google Pixel 4a",
+    "app": "src/main/resources/apps/Demo.apk"
+  }  
