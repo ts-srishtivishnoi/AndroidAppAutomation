@@ -4,6 +4,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.core.internal.com.fasterxml.jackson.databind.ObjectMapper;
 
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import java.io.File;
 import java.io.IOException;
@@ -16,12 +17,11 @@ import static com.mobile.demoapp.qa.automation.core.Utils.getProperty;
 
 public class DriverManager {
 
-     AppiumDriver driver;
+     AndroidDriver driver;
      private static final String ANDROID_PROP = "src/main/resources/config/android-caps.json";
 
-
-    public AppiumDriver getInstance() throws Exception {
-        setAndroidDriver();
+    public AndroidDriver getInstance() {
+         setAndroidDriver();
          return driver;
      }
 
